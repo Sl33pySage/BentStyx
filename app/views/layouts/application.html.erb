@@ -8,7 +8,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%#  yield :head %>
+    <% yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
@@ -24,7 +24,7 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
-      <%# yield :head %>
+      <% yield :head %>
       <h1>BentStyx Custom Rods</h1>
     </main>
   </body>
