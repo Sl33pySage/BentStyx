@@ -3,7 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
   <body class=" bg-sky-950">
-    <div class="px-2 mx-2 sm:shadow-2xl sm:shadow-gray-950 rounded-4xl p-10">
+    <div
+      style="align-self: first baseline;"
+      class="px-2 mx-2 sm:shadow-2xl sm:shadow-gray-950 rounded-4xl p-10"
+    >
       <h1 class="text-blue-500 text-3xl font-bold" style="text-align-last: end;">BentStyx Custom Rods
         <span
           class="font-extralight text-teal-200 italic text-sm mt-32 p-0"
@@ -14,10 +17,14 @@
         <span class="font-extralight italic">
           I am retired and following my passion of fishing and craftsmanship to
           bring you the best fishing experience possible!</span></p>
+      <div class="px-2 py-2 mx-2 text-teal-300 text-center">
+        <%= image_tag "DSC_4012.JPG", alt: "rod1", class: "rounded-4xl" %>
+        <p class="">Handcrafted</p>
+      </div>
       <button
         class="
-          bg-sky-500 hover:mt-4 hover:bg-sky-700 hover:animate-bounce rounded-4xl px-4
-          py-2 text-white
+          bg-sky-500 hover:mt-4 hover:bg-sky-700 hover:animate-bounce rounded-4xl ml-8
+          mt-4 px-2 py-2 text-white
         "
         type="button"
       >Order yours now!</button>
@@ -29,25 +36,11 @@
         text-teal-400
       "
     >
-      <div><%= image_tag
-        "DSC_3915.JPG",
-        alt: "rod1" %>
-        <p>Handcrafted</p>
-      </div>
-      <div class="col-span-2"><img
-          class="rounded-4xl"
-          src="https://majorleaguefishing.com/wp-content/uploads/2019/03/St.-Croix-Introduces-Two-New-RIP-N-CHATTER-RODS-1000x500.jpg"
-          alt="rod2"
-        >
-        <p>Passion fueled perfection</p>
-      </div>
       <div class="col-span-3">
-        <img
-          class="rounded-4xl"
-          src="https://www.wired2fish.com/wp-content/uploads/2023/02/best-fishing-rods-2024-800x450.webp"
-          alt="rod3"
-        >
+        <%= image_tag "DSC_3915.JPG", alt: "rod2", class: "rounded-4xl" %>
         <p>Makes for An Excellent Gift for your Beloved Fisherman!</p>
+        <%= image_tag "DSC_3926.JPG", alt: "rod3", class: "rounded-4xl" %>
+        <p>Passion fueled perfection</p>
       </div>
     </div>
   </body>
