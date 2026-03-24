@@ -37,7 +37,12 @@
       "
     >
       <div class="col-span-3">
-        <%= image_tag "DSC_3915.JPG", alt: "rod2", class: "rounded-4xl" %>
+        <div class="img-overlay-wrap">
+          <%= image_tag "DSC_3915.JPG", alt: "rod2", class: "rounded-4xl" %>
+          <svg viewBox="0 0 200 200">
+            <circle cx="75" cy="75" r="50" fill="rebeccapurple"/>
+          </svg>
+        </div>
         <p>Makes for An Excellent Gift for your Beloved Fisherman!</p>
         <%= image_tag "DSC_3926.JPG", alt: "rod3", class: "rounded-4xl" %>
         <p>Passion fueled perfection</p>

@@ -8,3 +8,21 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.img-overlay-wrap {
+  positon: relative;
+  display: inline-block; /* <= optional, for responsiveness */
+  transition: transform 150ms ease-in-out;
+}
+
+.img-overlay-wrap image_tag {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
