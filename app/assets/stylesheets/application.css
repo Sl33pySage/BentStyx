@@ -15,11 +15,32 @@
 }
 
 .image_wrapper svg {
+  pointer-events: bounding-box;
+  stroke: #5ff6ff;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.image_wrapper:hover {
+.image_wrapper:active {
   transform: rotate(15deg);
+}
+
+.image_tag {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.right-rod-rect,
+.middle-rod-rect,
+.left-rod-rect {
+  pointer-events: bounding-box;
+  stroke: #5ff6ff;
+}
+
+.right-rod-rect,
+.middle-rod-rect,
+.left-rod-rect:hover {
+  stroke: #555555;
 }
