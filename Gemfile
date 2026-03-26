@@ -66,5 +66,3 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 4.4"
-
-gem "trix", ">= 0.11.1"
