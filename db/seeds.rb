@@ -7,3 +7,35 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+
+
+# Clear old data to avoid duplication
+Product.destroy_all
+
+# Create Rod 1
+Product.create!(
+  id: 1,
+  name: "Ultralight Custom Rod",
+  description: "Perfect for trout and panfish",
+  price: 120.00
+)
+
+# Create Rod 2
+Product.create!(
+  id: 2,
+  name: "Medium Baitcaster",
+  description: "Great all-rounder",
+  price: 100.00
+)
+
+# Create Rod 3
+Product.create!(
+  id: 3,
+  name: "Heavy Surf Rod",
+  description: "Big Hoss",
+  price: 350.00
+)
+
+puts "Successfully seeded 3 fishing rods!"
