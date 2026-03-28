@@ -1,0 +1,1 @@
+@product = Product.find(params[:id])
