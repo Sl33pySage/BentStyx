@@ -35,12 +35,15 @@
 .right-rod-rect,
 .middle-rod-rect,
 .left-rod-rect {
+  pointer: pointer;
   pointer-events: bounding-box;
   stroke: #5ff6ff;
 }
 
-.right-rod-rect,
-.middle-rod-rect,
+.right-rod-rect:hover,
+.middle-rod-rect:hover,
 .left-rod-rect:hover {
   stroke: #555555;
+  cursor: pointer;
+  fill: rgba(255, 255, 255, 0.2);
 }

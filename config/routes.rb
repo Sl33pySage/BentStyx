@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
+  get "products/show"
   get "home/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # other routes
 
-  resource :product
-  resolve("Product") { [ :product ] }
+  resources :products
 
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
@@ -20,6 +19,7 @@ Rails.application.routes.draw do
 
 # Root index
 Rails.application.routes.draw do
+  get "products/show"
   root "home#index"
   end
 end
