@@ -22,9 +22,9 @@
   left: 0;
 }
 
-.image_wrapper:active {
+/* .image_wrapper:active {
   transform: rotate(15deg);
-}
+} */
 
 .image_tag {
   display: block;
