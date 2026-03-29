@@ -50,7 +50,19 @@
               class="middle-rod-rect"
             />
           <% end %>
-          <rect x="300" width="100" height="900" opacity="0" class="right-rod-rect"/>
+          <%= link_to product_path(2) do %>
+            <rect
+              x="300"
+              width="100"
+              height="900"
+              opacity="0"
+              fill="transparent"
+              class="right-rod-rect"
+            />
+          <% end %>
+          <%= link_to product_path(3) do %>
+            <rect fill="orange" opacity="" width="170" height="900" class="left-rod-rect"/>
+          <% end %>
         </svg>
         <p>Makes for An Excellent Gift for your Beloved Fisherman!</p>
       </div>
