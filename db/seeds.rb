@@ -15,38 +15,29 @@
 Product.destroy_all
 
 # Create Rod 1
-rod1 = Product.create!(
+Product.create!(
   id: 1,
   name: "Ultralight Custom Rod",
   description: "Perfect for trout and panfish",
-  price: 120.00
-)
-rod1.image.attach(
-    io: File.open(Rails.root.join('app/assets/images/seed/rod1.jpg')),
-    filename: '../app/assets/images/DSC_3944.JPG'
+  price: 120.00,
+  image_name: "rod1.JPG"
 )
 
 # Create Rod 2
-rod2 = Product.create!(
+Product.create!(
   id: 2,
   name: "Medium Baitcaster",
   description: "Great all-rounder",
-  price: 100.00
-)
-rod2.image.attach(
-  io: File.open(Rails.root.join('app/assets/images/seeds/rod2.jpg')),
-  filename: '../app/assets/images/DSC_3928.JPG'
+  price: 100.00,
+  image_name: "rod2.JPG"
 )
 
 # Create Rod 3
-rod3 = Product.create!(
+Product.create!(
   id: 3,
   name: "Heavy Surf Rod",
   description: "Big Hoss",
-  price: 350.00
+  price: 350.00,
+  image_name: "rod3.JPG"
 )
-rod3.image.attach(
-  io: File.open(Rails.root.join('app/assets/images/seeds/rod3.jpg')),
-  filename: '../app/assets/images/DSC_3932.JPG'
-)
-puts "Successfully seeded 3 fishing rods!"
+puts "Seeds created!"
