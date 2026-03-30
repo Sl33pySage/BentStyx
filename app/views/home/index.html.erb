@@ -40,7 +40,7 @@
         <%# image_tag "DSC_3915.JPG", alt: "rod2", class: "rounded-4xl" %>
         <%= image_tag "DSC_3926.JPG", alt: "rod2", class: "rounded-4xl image_tag" %>
         <svg viewBox="0 0 400 600">
-          <%= link_to product_path(1) do %>
+          <%= link_to product_path(2) do %>
             <rect
               x="180"
               width="120"
@@ -50,7 +50,7 @@
               class="middle-rod-rect"
             />
           <% end %>
-          <%= link_to product_path(2) do %>
+          <%= link_to product_path(3) do %>
             <rect
               x="300"
               width="100"
@@ -60,8 +60,14 @@
               class="right-rod-rect"
             />
           <% end %>
-          <%= link_to product_path(3) do %>
-            <rect fill="orange" opacity="" width="170" height="900" class="left-rod-rect"/>
+          <%= link_to product_path(1) do %>
+            <rect
+              fill="transparent"
+              opacity="0"
+              width="175"
+              height="900"
+              class="left-rod-rect"
+            />
           <% end %>
         </svg>
         <p>Makes for An Excellent Gift for your Beloved Fisherman!</p>
