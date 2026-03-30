@@ -2,15 +2,23 @@
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
-  <body>
-    <h1 class="font-bold text-4xl"><%= @product.name %></h1>
-    <div class="product-details">
-      <%= image_tag @product.image_name %>
+  <body class="bg-sky-950">
+    <div
+      style="align-self: first baseline;"
+      class="
+        px-2 mx-2 sm:shadow-2xl sm:shadow-gray-950 rounded-4xl p-10 text-center
+      "
+    >
+      <h1 class="font-bold text-4xl text-blue-500"><%= @product.name %></h1>
+      <div class="product-details">
+        <div class="px-2 py-2 mx-2 text-teal-300 text-center">
+          <%= image_tag @product.image_name, class: "rounded-4xl" %>
 
-      <p><strong>Price:</strong>
-        <%= number_to_currency(@product.price) %></p>
-      <p><%= @product.description %></p>
-      <p>Find me in app/views/products/show.html.erb</p>
+          <p class="text-teal-400 text-center italic text-sm font-light"><strong>Price:</strong>
+            <%= number_to_currency(@product.price) %></p>
+          <p class="text-teal-400 text-center italic text-sm font-light"><%= @product.description %></p>
+        </div>
+      </div>
     </div>
     <%= link_to "Back to Home", root_path %>
   </body>
