@@ -1,12 +1,17 @@
-<body>
-  <h1 class="font-bold text-4xl"><%= @product.name %></h1>
-  <div class="product-details">
-    <%= image_tag @product.image_name %>
+<!doctype html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+  <body>
+    <h1 class="font-bold text-4xl"><%= @product.name %></h1>
+    <div class="product-details">
+      <%= image_tag @product.image_name %>
 
-    <p><strong>Price:</strong>
-      <%= number_to_currency(@product.price) %></p>
-    <p><%= @product.description %></p>
-    <p>Find me in app/views/products/show.html.erb</p>
-  </div>
-  <%= link_to "Back to Home", root_path %>
-</body>
+      <p><strong>Price:</strong>
+        <%= number_to_currency(@product.price) %></p>
+      <p><%= @product.description %></p>
+      <p>Find me in app/views/products/show.html.erb</p>
+    </div>
+    <%= link_to "Back to Home", root_path %>
+  </body>
+</html>
