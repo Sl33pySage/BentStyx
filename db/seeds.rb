@@ -35,8 +35,8 @@ Product.create!(
 # Create Rod 3
 Product.create!(
   id: 3,
-  name: "Heavy Surf Rod",
-  description: "Big Hoss",
+  name: "Medium Heavy/Fast Action",
+  description: "Bass Rod Fishing Dream!",
   price: 350.00,
   image_name: "rod3.JPG"
 )
