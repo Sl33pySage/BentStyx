@@ -22,10 +22,6 @@
   left: 0;
 }
 
-/* .image_wrapper:active {
-  transform: rotate(15deg);
-} */
-
 .image_tag {
   display: block;
   max-width: 100%;
@@ -46,4 +42,8 @@
   stroke: #555555;
   cursor: pointer;
   fill: rgba(255, 255, 255, 0.2);
+}
+
+.product_page_image {
+  width: 100%;
 }
