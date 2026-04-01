@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
   <body class="bg-sky-950">
     <div
-      style="align-self: first baseline;"
+      style="align-self: first baseline; display: flex; flex-direction: column; margin-left: auto; margin-right: auto;"
       class="
         px-2 mx-2 sm:shadow-2xl sm:shadow-gray-950 rounded-4xl p-10 text-center
       "
@@ -17,7 +17,9 @@
       <h1 class="font-bold text-4xl text-blue-500"><%= @product.name %></h1>
       <div class="product-details">
         <div class="px-2 py-2 mx-2 text-teal-300 text-center">
-          <%= image_tag @product.image_name, class: "rounded-4xl image_tag product_page_image" %>
+          <%= image_tag @product.image_name,
+          class: "rounded-4xl image_tag product_page_image",
+          style: "width: auto; height: 700px;" %>
 
           <p class="text-teal-400 text-center italic text-sm font-light"><strong>Price:</strong>
             <%= number_to_currency(@product.price) %></p>
