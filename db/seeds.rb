@@ -17,25 +17,25 @@ Product.destroy_all
 # Create Rod 1
 Product.create!(
   id: 1,
-  name: "Ultralight Custom Rod",
+  name: "Medium-Light/FastAction Custom Rod",
   description: "Perfect for trout and panfish",
-  price: 120.00,
+  price: 250.00,
   image_name: "rod1.JPG"
 )
 
 # Create Rod 2
 Product.create!(
   id: 2,
-  name: "Medium Baitcaster",
+  name: "Medium/Moderate-Action Custom Baitcaster Rod",
   description: "Great all-rounder",
-  price: 100.00,
+  price: 250.00,
   image_name: "rod2.JPG"
 )
 
 # Create Rod 3
 Product.create!(
   id: 3,
-  name: "Medium Heavy/Fast Action",
+  name: "Medium-Heavy/Fast-Action Custom Baitcaster Rod",
   description: "Bass Rod Fishing Dream!",
   price: 350.00,
   image_name: "rod3.JPG"
