@@ -10,16 +10,18 @@
       "
     >
 
-      <button class=" bg-gray-500 rounded-md text-white px-2" type="button">
+      <button
+        class="bg-gray-500 rounded-md text-white px-2"
+        type="button"
+        style="width: 45%; margin: auto;"
+      >
         <%= link_to "Back to Home", root_path %>
 
       </button>
       <h1 class="font-bold text-4xl text-gray-500"><%= @product.name %></h1>
       <div class="product-details">
         <div class="px-2 py-2 mx-2 text-gray-300 text-center">
-          <%= image_tag @product.image_name,
-          class: "rounded-4xl image_tag product_page_image",
-          style: "width: auto; height: 700px;" %>
+          <%= image_tag @product.image_name, class: "rounded-4xl image_tag product_page_image" %>
 
           <p class="text-gray-400 text-center italic text-sm font-light"><strong>Price:</strong>
             <%= number_to_currency(@product.price) %></p>

@@ -45,5 +45,6 @@
 }
 
 .product_page_image {
-  width: 100%;
+  width: 45%;
+  margin: auto;
 }
